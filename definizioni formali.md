@@ -7,3 +7,8 @@
 - Costo di un albero ricoprente: $\sum_{e \in E\prime} \lambda_{E\prime}(e)$
 - Albero minimo ricoprente: $A : \text{A è un albero ricoprente di G}\ \wedge\ \nexists\ A\prime\text{ albero ricoprente di G} : costo(A\prime) < costo(A)$
 - Taglio: un sottoinsieme di archi del grafo. $T(N_i) = \{\ (x,y) \in E : x \in N_i \ \wedge \ y \in \bar{N_i} \ \}$, dove $\bar{N_i} = N - N_i$
+
+# Lezione 14 - Programmazione dinamica
+## Edit Distance
+- Modifica elementare: inserimento, rimozione o sostituzione di un carattere
+- Distanza tra due stringhe $\delta(x,y)$: il numero minimo di modifiche elementari necessarie per modificare una stringa in un'altra
