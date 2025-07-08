@@ -11,4 +11,8 @@
 # Lezione 14 - Programmazione dinamica
 ## Edit Distance
 - Modifica elementare: inserimento, rimozione o sostituzione di un carattere
-- Distanza tra due stringhe $\delta(x,y)$: il numero minimo di modifiche elementari necessarie per modificare una stringa in un'altra
+- Distanza tra due stringhe $\delta(x,y)$: il numero minimo di modifiche elementari necessarie per          modificare una stringa in un'altra
+```math
+dist(x,y)\  \hat= \ min\{ \ |\sigma| : \sigma \in \sum_{s1} \wedge \ \sigma(s1) = s2 \}.\\
+\text{Dove } \sigma \hat=\text{"sequenza di modifiche"},\\ \sum_s \hat=\text{"insieme di tutte le sequenze di modifiche applicabili alla stringa s"}, \\\sigma(s) \hat=\text{"stringa ottenuta applicando le modifiche in $\sigma$ a s (in ordine)"}
+```
