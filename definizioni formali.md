@@ -25,7 +25,7 @@ f(n) = \Theta (g(n)) \quad \text{se } \exists c_1,c_2>0, n_0\ge0 : c_1 g(n) \le 
 ## Complessità dei problemi
 - Limite superiore: qual è, nel caso peggiore, la quantità di tempo sufficiente per la risoluzione del problema. È sufficiente conoscere **qualche** algoritmo.
 ```math
-P \text{ ha upper bound } O(f(n)) \Leftrightarrow \exist A \text{ risolutore di } P : T_A^{worst} \in O(f(n))
+P \text{ ha upper bound } O(f(n)) \Leftrightarrow \exists A \text{ risolutore di } P : T_A^{worst} \in O(f(n))
 ```
 - Limite inferiore (**complessità intrinseca**): qual è, nel caso peggiore, la quantità di tempo sicuramente necessaria per la risoluzione del problema. È necessario dimostrare che **nessun algoritmo** impieghi meno tempo.
 ```math
