@@ -6,31 +6,31 @@
 - Complessità peggiore: $T_A^{worst}(n)=max\{T_A(x)|x \in I \wedge |x| = n \}$
 - Complessità migliore: $T_A^{best}(n) = min\{T_A(x)|x \in I \wedge |x| = n \}$
 - Complessità media: si considera anche la distribuzione di probabilità che si verifichino certi input
-$$
+```math
 T_A^{avg}(n) = \sum_{x \in I \wedge |x| = n}T_A(x) \times Pr(x)
-$$
+```
 - O grande
-$$
+```math
 f(n) = O(g(n)) \quad \text{se } \exists c>0, n_0 \ge 0 : f(n) \le cg(n) \quad \forall n \ge n_0
-$$
+```
 - Omega
-$$
+```math
 f(n) = \Omega (g(n)) \quad \text{se } \exists c>0, n_0\ge0 : f(n)\ge cg(n) \quad \forall n \ge n_0
-$$
+```
 - Theta
-$$
+```math
 f(n) = \Theta (g(n)) \quad \text{se } \exists c_1,c_2>0, n_0\ge0 : c_1 g(n) \le f(n) \le c_2 g(n) \quad \forall n \ge n_0
-$$
+```
 
 ## Complessità dei problemi
 - Limite superiore: qual è, nel caso peggiore, la quantità di tempo sufficiente per la risoluzione del problema. È sufficiente conoscere **qualche** algoritmo.
-$$
+```math
 P \text{ ha upper bound } O(f(n)) \Leftrightarrow \exist A \text{ risolutore di } P : T_A^{worst} \in O(f(n))
-$$
+```
 - Limite inferiore (**complessità intrinseca**): qual è, nel caso peggiore, la quantità di tempo sicuramente necessaria per la risoluzione del problema. È necessario dimostrare che **nessun algoritmo** impieghi meno tempo.
-$$
+```math
 P \text{ ha lower bound } \Omega (f(n)) \Leftrightarrow \forall A \text{ risolutore di } P,\  T_A^{worst} \in \Omega (f(n))
-$$
+```
 - Algoritmo ottimale: se dato un problema P avente complessità intrinseca $\Omega (f(n))$, un algoritmo A ha complessità $O(f(n))$ nel caso peggiore
 
 
