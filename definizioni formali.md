@@ -7,7 +7,7 @@
 - Complessità migliore: $T_A^{best}(n) = min\{T_A(x)|x \in I \wedge |x| = n \}$
 - Complessità media: si considera anche la distribuzione di probabilità che si verifichino certi input
 ```math
-T_A^{avg}(n) = \sum_{x \in I \wedge |x| = n}T_A(x) \times Pr(x)
+T_A^{avg}(n) = \sum_{x : x \in I \wedge |x| = n}T_A(x) \times Pr(x)
 ```
 - O grande
 ```math
@@ -75,7 +75,7 @@ P \text{ ha lower bound } \Omega (f(n)) \Leftrightarrow \forall A \text{ risolut
 
 
 # Lezioni 11/13 - Grafi pesati
-- Grafo pesato: $G = < N, E, \lambda >$, dove $\lambda$ è una funzione di costo che prende come chiave $(x,y)$ e restituisce il peso dell\primearco corrispondente
+- Grafo pesato: $G = < N, E, \lambda >$, dove $\lambda$ è una funzione di costo che prende come chiave $(x,y)$ e restituisce il peso dell'arco corrispondente
 - Costo di un cammino: $costo(c) = \sum_{i=0}^{k-1}\lambda((x_i,x_{i+1}))$
 - Distanza: $dist(x,y) = min\{costo(c):\text{c è un cammino da x a y}\}$
 - Cammino di costo minimo: $c : costo(c) = dist(c)$
